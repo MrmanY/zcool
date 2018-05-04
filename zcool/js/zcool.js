@@ -2,8 +2,8 @@
 // 方法一，字符串拼接
 var cont_List = document.getElementById("contList");
 var guess_Like = document.getElementById("guessLike");
+var cl_str = gl_str =  "";
 for(var i = 0 ; i < 40 ; i++){
-    var cl_str,gl_str
     var str = "<li>"+
                 '<a href="#">'+
                     '<img src="img/contimg'+ (i+1) +'.jpg"/>'+
@@ -93,7 +93,7 @@ var move_nav = document.getElementById("nav");
 
 onscroll = function(){
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log(scrollTop);
+    // console.log(scrollTop);
     
     if(scrollTop >= 606){
         if(move_nav.className == ""){
